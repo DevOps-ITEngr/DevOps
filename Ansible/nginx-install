@@ -1,0 +1,20 @@
+# Installing nginx on all nodes with ansible automation
+
+---
+- name: nginx Installation On Client Machine
+  hosts: client-machines
+  become: true
+  vars:
+    ansible_become_pass: Open 920!*
+  tasks:
+   - name: install nginx
+     package: pkg=nginx state=present
+
+     notify:
+      - start nginx
+
+  handlers:
+   - name: start nginx
+     service: name=nginx state=started
+...
+
