@@ -1,6 +1,7 @@
 # Installing nginx on all nodes with ansible automation
 # Written on YAML
 # Ansible Playbook 2.9.27 | Python 2.7.5
+# The password [ansible_become_pass] has to be inserted according to (one's) cluster nodes as configured
 
 ---
 - name: nginx Uninstallation On Client Machine
