@@ -1,0 +1,21 @@
+---
+- name: nginx Uninstallation On Client Machine
+  hosts: client-machines
+  become: true
+  vars:
+    ansible_become_pass: Open 920!*
+
+  tasks:
+   - name: uninstall nginx
+     yum:
+       name: nginx
+       state: absent
+
+     notify: stop nginx
+
+  handlers:
+   - name: stop nginx service
+     service:
+       name: nginx
+       state: stopped
+...
