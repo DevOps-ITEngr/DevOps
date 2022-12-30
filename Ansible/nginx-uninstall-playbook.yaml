@@ -1,6 +1,7 @@
 # Installing nginx on all nodes with ansible automation
+# Author: UKM
 # Written on YAML
-# Ansible Playbook 2.9.27 | Python 2.7.5
+# Ansible Playbook 2.9.27 | Python 2.7.5 (Ansible 2.9.27 can use Python 3.11 interpreter as well with right $PATH setup within the config file.)
 # The password [ansible_become_pass] has to be inserted according to (one's) cluster nodes as configured
 
 ---
