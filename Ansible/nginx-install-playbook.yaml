@@ -7,7 +7,7 @@
   hosts: client-machines
   become: true
   vars:
-    ansible_become_pass: Open 920!*
+    ansible_become_pass: 
   tasks:
    - name: install nginx
      package: pkg=nginx state=present
