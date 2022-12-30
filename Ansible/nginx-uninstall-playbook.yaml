@@ -1,3 +1,7 @@
+# Installing nginx on all nodes with ansible automation
+# Written on YAML
+# Ansible Playbook 2.9.27 | Python 2.7.5
+
 ---
 - name: nginx Uninstallation On Client Machine
   hosts: client-machines
